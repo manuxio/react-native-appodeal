@@ -225,7 +225,6 @@ export default class ULTIMO extends Component {
         <AppodealNative
           onDidLoadNativeAd={(e) => {
             console.log('Appodeal native from react did load', e.nativeEvent);
-            attachToView
           }}
           style={{
             height: 80,
