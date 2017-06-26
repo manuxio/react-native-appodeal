@@ -102,7 +102,7 @@
   }
 
   - (void)bannerView:(RNCAppodealBANNERView *)bannerView didFailToLoadAdWithError:(NSError *)error {
-    RCTLogTrace(@"[Appodeal BANNER View] %@ did fail to load!", bannerView);
+    RCTLogTrace(@"[Appodeal BANNER View] %@ did fail to load with error %@", bannerView, error);
     if (!bannerView.onDidFailToLoad) {
       RCTLogTrace(@"[Appodeal BANNER View] has no onDidFailToLoad method!");
     } else {
