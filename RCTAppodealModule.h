@@ -9,4 +9,3 @@
 
 @interface RCTAppodealModule : RCTEventEmitter <RCTBridgeModule, AppodealBannerDelegate, AppodealInterstitialDelegate, AppodealRewardedVideoDelegate, AppodealNonSkippableVideoDelegate>
 @end
-

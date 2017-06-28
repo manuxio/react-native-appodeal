@@ -1,10 +1,7 @@
 //
 //  AppodealBannerViewManager.m
 //  ULTIMO
-//
 //  Created by Manuele on 25/06/17.
-//  Copyright © 2017 Facebook. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <Appodeal/Appodeal.h>

@@ -3,8 +3,6 @@
 //  ULTIMO
 //
 //  Created by Manuele on 25/06/17.
-//  Copyright © 2017 Facebook. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <Appodeal/Appodeal.h>
@@ -36,7 +34,7 @@
 
 @implementation RNCAppodealNativeViewManager
 
-  RCT_EXPORT_MODULE();
+  RCT_EXPORT_MODULE(RNCAppodealNativeViewManager);
   RCT_EXPORT_VIEW_PROPERTY(onDidLoadNativeAd, RCTBubblingEventBlock)
   RCT_EXPORT_VIEW_PROPERTY(onDidFailToLoadNativeAdsWithError, RCTBubblingEventBlock)
 

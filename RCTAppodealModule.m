@@ -180,8 +180,8 @@ int nativeShowStyleForType(int adTypes) {
   RCT_EXPORT_METHOD(showAd:(int)showType result:(RCTResponseSenderBlock)callback)
   {
     dispatch_async(dispatch_get_main_queue(), ^{
-      RCTLogInfo(@"Showing banner of type %i", showType);
-      if([Appodeal showAd:AppodealShowStyleBannerBottom rootViewController:[[UIApplication sharedApplication] keyWindow].rootViewController])
+      RCTLogInfo(@"[Appdeal Module] showAd of type %i", showType);
+      if([Appodeal showAd:nativeShowStyleForType(showType) rootViewController:[[UIApplication sharedApplication] keyWindow].rootViewController])
       callback(@[@YES]);
       else
       callback(@[@NO]);
@@ -191,6 +191,7 @@ int nativeShowStyleForType(int adTypes) {
   RCT_EXPORT_METHOD(showWithPlacement:(int)showType placement:(NSString*)placement result:(RCTResponseSenderBlock)callback)
   {
     dispatch_async(dispatch_get_main_queue(), ^{
+      RCTLogInfo(@"[Appdeal Module] showAd of type %i on place %@", showType, placement);
       if([Appodeal showAd:nativeShowStyleForType(showType) forPlacement:placement rootViewController:[[UIApplication sharedApplication] keyWindow].rootViewController])
       callback(@[@YES]);
       else
